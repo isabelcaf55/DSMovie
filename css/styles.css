@@ -7,6 +7,8 @@
   --color-primary: #4d41c0;
   --color-text-header: #ffff;
   --color-hover: #e6e6fa;
+  --background-card:#F0FFF0;
+  --text-gray: #4a4a4a;
 }
 * {
   box-sizing: border-box;
@@ -36,6 +38,8 @@ header {
 }
 
 nav {
+  width: min(120rem, 100%);
+  padding-inline: 2.4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -47,6 +51,7 @@ nav h1 {
 }
 
 nav a {
+ 
   font-size: 12px;
   font-weight: 400;
 }
@@ -66,4 +71,55 @@ a:hover {
 
 .dsmovieContactContainer img {
   margin-right: 10px;
+}
+#dsmovieCardList {
+  padding: 40px 0;
+  position: absolute;
+  margin-left: 33px;
+  
+}
+
+.dsmovieCard {
+  
+  width: 260px;
+  height: 349px;
+  background-color: var(--background-card);
+  border-radius: 8px;
+}
+
+.dsmovieCard img {
+  width: 100%;
+  border-radius: 8px 8px 0 0 ;
+}
+
+.dsmovieCardDescription {
+  padding: 10px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.dsmovieCardDescription h3 {
+  margin-bottom: 25px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.dsmovieBtn {
+  width: 180px;
+  height: 40px;
+  background-color: var(--color-primary);
+  color: var(--color-text-header);
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  
+}
+
+.dsmovieBtn:hover {
+  color: var(--color-hover);
 }
