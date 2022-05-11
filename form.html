@@ -21,30 +21,47 @@
       <nav>
         <h1>DSMovie</h1>
         <div class="dsmovieContactConteiner">
-          <img src="./img/Vector.svg" alt="Logotipo Github">
-        <a href="https://github.com/devsuperior">/devsuperior</a>
+          <img src="./img/Vector.svg" alt="Logotipo Github" />
+          <a href="https://github.com/devsuperior">/devsuperior</a>
         </div>
-        
       </nav>
     </header>
 
     <main>
       <section id="dsmovieFormSection">
         <div class="container dsmovieFormContainer">
-          
-            <div class="dsmovieForm">                           
-              <img src="https://www.themoviedb.org/t/p/original/h48Dpb7ljv8WQvVdyFWVLz64h4G.jpg" alt="Cartaz serie Lucifer">
-              <div class="dsmovieCardDescription">
-                <h3>Lúcifer</h3>
-                <a class="dsmovieBtn" href="index.html">Cancelar</a>
-              </div>
-    
-            </div>
+          <div class="dsmovieForm">
+            <img
+              src="https://www.themoviedb.org/t/p/original/h48Dpb7ljv8WQvVdyFWVLz64h4G.jpg"
+              alt="Cartaz serie Lucifer"
+            />
+            <div class="dsmovieFormDescription">
+              <h3>Lúcifer</h3>
 
-          
-          
+              <form class="dsmovieForm">
+                <div class="form-group dsmovieFormGroup">
+                  <label for="email">Informe seu email</label>
+                  <input type="email" class="form-control" id="email"/>
+                </div>
+                <div class="form-group dsmovieFormGroup">
+                  <label for="score">Informe sua avaliação</label>
+                  <select name="core" class="form-control" id="score">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+
+                <div class="dsmovieFormBtnContainer">
+                  <button class="dsmovieBtn" type="submit">Salvar</button>
+                  <a class="dsmovieBtn" href="index.html">Cancelar</a>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
-        
       </section>
     </main>
   </body>
