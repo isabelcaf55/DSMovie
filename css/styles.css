@@ -131,3 +131,17 @@ a:hover {
 .dsmovieBtn:hover {
   color: var(--color-hover);
 }
+/*--------------Form----------*/
+
+.dsmovieFormContainer {
+  padding: 40px 0;
+  min-width: 300px;
+  max-width: 800px;
+  border-radius: 3px;
+
+}
+
+.dsmovieForm img {
+  border-radius: 8px 8px 0 0;
+max-width: 100%;
+}
