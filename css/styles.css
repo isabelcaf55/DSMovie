@@ -7,11 +7,10 @@
   --color-primary: #4d41c0;
   --color-text-header: #ffff;
   --color-hover: #e6e6fa;
-  --background-card:#F0FFF0;
+  --background-card: #f0fff0;
   --text-gray: #4a4a4a;
-  --text-light-gray: #AAAAAA;
-  --star-yellow: #FFBB3A; 
-
+  --text-light-gray: #aaaaaa;
+  --star-yellow: #ffbb3a;
 }
 * {
   box-sizing: border-box;
@@ -54,7 +53,6 @@ nav h1 {
 }
 
 nav a {
- 
   font-size: 12px;
   font-weight: 400;
 }
@@ -76,24 +74,20 @@ a:hover {
   margin-right: 10px;
 }
 #dsmovieCardList {
-  padding: 40px 85px;
+  padding: 0px 85px;
 }
 
 .dsmovieCard {
-  
   width: 100%;
   max-width: 260px;
   max-height: 349px;
-
 }
 
 .dsmovieCard img {
-  
   width: 100%;
   max-height: 140px;
 
-  border-radius: 8px 8px 0 0 ;
-  
+  border-radius: 8px 8px 0 0;
 }
 
 .dsmovieCardDescription {
@@ -103,9 +97,8 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border-radius: 0 0 8px 8px ;
+  border-radius: 0 0 8px 8px;
   min-height: 190px;
-  
 }
 
 .dsmovieCardDescription h3 {
@@ -114,7 +107,6 @@ a:hover {
   font-weight: 700;
   text-align: center;
 }
-
 
 .dsmovieBtn {
   width: 180px;
@@ -128,7 +120,6 @@ a:hover {
   justify-content: center;
   border-radius: 10px;
   border: 0;
-  
 }
 
 .dsmovieBtn:hover {
@@ -141,16 +132,15 @@ a:hover {
   min-width: 300px;
   max-width: 800px;
   border-radius: 3px;
-
 }
 
 .dsmovieForm img {
   border-radius: 8px 8px 0 0;
-max-width: 100%;
+  max-width: 100%;
 }
 
 .dsmovieFormDescription {
-  background-color: white ;
+  background-color: white;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -178,7 +168,6 @@ max-width: 100%;
   align-items: center;
   height: 100px;
   justify-content: space-between;
- 
 }
 
 .dsmovieCardDescription h3 {
@@ -210,4 +199,54 @@ max-width: 100%;
   font-size: 12px;
   width: 400;
   margin-bottom: 10px;
+}
+
+/*-----------Paginação-------------*/
+
+.dsmoviePaginationContainer {
+  padding: 15px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.dsmoviePaginationBox {
+
+  display: flex;
+  width: 180px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dsmoviePaginationBox p {
+  margin: 0;
+  font-size: 12px;
+  color: var(--color-primary);
+  font-weight: 400;
+}
+
+.dsmoviePaginationBox button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--color-primary);
+  border-radius: 4px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dsmoviePaginationBox button:disabled {
+  border: 1px solid var(--text-light-gray);
+}
+.dsmovieFlipHorizontal {
+  transform: rotate(180deg);
+}
+
+.dsmoviePaginationBox button img {
+
+  filter: brightness(0) saturate(100%) invert(23%) sepia(100%) saturate(2022%) hue-rotate(238deg) brightness(79%) contrast(89%);
+}
+
+.dsmoviePaginationBox button:disabled img {
+  filter: unset;
 }
